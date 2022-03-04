@@ -15,14 +15,16 @@ body {
   --link-inactive: black;
   --link-hover: #71797E;
   --side-bar:#f1f1f1;
+  --a-col:black;
 }
 
 [data-theme='dark'] {
-  --background: black;
+  --background: #121212;
   --foreground: white;
   --link-inactive: white;
   --link-hover:#71797E;
-  --side-bar:#2F4F4F;
+  --side-bar:#1F1B24;
+  --a-col:white;
 }
 
 * {

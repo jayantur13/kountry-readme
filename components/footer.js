@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className='footer'>
       <h2 className='logohead'>Powered by{' '}
-      <p className='logo'>
-        <a href="https://github.com/jayantur13/Kountry-readme"
-          target="_blank"
-          rel="noopener noreferrer">
-          <Image src="/npm.png" alt="Npm Logo" width={48} height={48} />
-        </a>
-      </p></h2>
+        <p className='logo'>
+          <a href="https://github.com/jayantur13/Kountry"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Image src="/npm.png" alt="Npm Logo" width={48} height={48} />
+          </a>
+        </p></h2>
       <style jsx>
         {`.footer {
     display: flex;

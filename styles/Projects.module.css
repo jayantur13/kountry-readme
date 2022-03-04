@@ -1,8 +1,4 @@
-.container {
-    padding: 0;
-  }
-  
-  .title {
+.title {
     margin: 0;
     line-height: 1.15;
     font-size: 50px;
@@ -130,7 +126,7 @@
     }
   
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     div.content {
       margin: 0 auto;
       word-wrap: break-word;

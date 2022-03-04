@@ -1,17 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Projects.module.css'
-import Footer from '../components/footer'
-import Sidebar from '../components/sidebar'
 
 export default function Projects() {
 
   return (
-    <div className={styles.container}>
-      <Sidebar />
+    <>
       <Head>
         <title>Kountry - Projects</title>
         <meta name="description" content="Checkout other exciting projects other than Kountry npm package" />
-        <meta name="keywords" content="kountry,kountry api,kountry library,kountry npm,kountry yarn" />
+        <meta name="keywords" content="country npm,kountry,kountry api,kountry library,kountry npm,kountry yarn" />
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.png" />
@@ -59,7 +56,6 @@ export default function Projects() {
 
         </div>
       </div>
-      <Footer />
-    </div>
+    </>
   )
 }

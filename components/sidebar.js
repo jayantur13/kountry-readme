@@ -31,24 +31,23 @@ export default function Footer() {
         <Link href="/" passHref={true}><a className={currentRoute === '/' ? 'active' : ''}>Documentation</a></Link>
         <Link href="/examples" passHref={true}><a className={currentRoute === '/examples' ? 'active' : ''}>Examples</a></Link>
         <Link href="/projects"><a className={currentRoute === '/projects' ? 'active' : ''}>Projects</a></Link>
-        <Link href="https://github.com/jayantur13/Kountry-readme"><a target='_blank'>Github &rarr;</a></Link>
+        <Link href="https://github.com/jayantur13/Kountry"><a target='_blank'>Github &rarr;</a></Link>
         <div>
-          <button><Image src="/light.png" alt="light" width={24} height={24} className='btn' onClick={() => setTheme('light')}/></button>
-          <button><Image src="/dark.png" alt="dark" width={24} height={24} className='btn' onClick={() => setTheme('dark')}/></button>
+          {
+           `${theme}` === 'dark' ? <input type="image" src="/light.png" alt="light" width={24} height={24} className='btn' onClick={() => setTheme('light')}/> : <input type="image" src="/dark.png" alt="dark" width={24} height={24} className='btn' onClick={() => setTheme('dark')}/>
+          }
         </div>
       </nav>
       <style jsx>
         {`.sidebar {
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     background: var(--side-bar);
     position: fixed;
     height: 100%;
     overflow: auto;
   }
-
-
   /* Sidebar links */
   .sidebar a {
     display: block;
@@ -90,11 +89,10 @@ export default function Footer() {
     .sidebar a:first-child {
       border-bottom: hidden;
     }
-
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 480px) {
     .sidebar {
       width: 100%;
     }
@@ -107,19 +105,16 @@ export default function Footer() {
       float: none;
     }
   }
-
   div {
     float:left;
     margin-top:10px;
     margin-right:12px;
     margin-left:18px;
   }
-
   button {
     border:none;
     background:none;
   }
-
  `}
       </style>
     </>

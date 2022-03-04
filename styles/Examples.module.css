@@ -26,11 +26,13 @@
 
 .code {
     background: #0a0a0a;
-    color: white;
+    color: #f1f1f1;
     border-radius: 5px;
     padding: 12px;
     margin: 0;
     font-size: 18px;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 .fingerdown {
@@ -65,8 +67,10 @@
     }
     .code {
         background: #0a0a0a;
-        color: white;
+        color: #f1f1f1;
         border-radius: 2px;
+        white-space: pre-wrap;
+        word-break: break-all;
     }
 }
 
@@ -96,7 +100,7 @@
     }
     .code {
         background: #0a0a0a;
-        color: white;
+        color: var(--a-col);
         border-radius: 2px;
     }
 }
@@ -122,7 +126,7 @@
     }
     .code {
         background: #0a0a0a;
-        color: white;
+        color: var(--a-col);
         border-radius: 2px;
     }
 }
@@ -151,7 +155,7 @@
     }
     .code {
         background: #0a0a0a;
-        color: white;
+        color: #f1f1f1;
         border-radius: 2px;
     }
 }
