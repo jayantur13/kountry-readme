@@ -1,172 +1,164 @@
 .title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 50px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 32px 0;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.fingerdown {
+  animation-name: fingerdownanim;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 250px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 300px;
+  min-height: 250px;
+  background: #02b875;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px;
+  box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+}
+.card:nth-child(2) {
+  background: #4181ee;
+}
+.card:last-child {
+  background: #673ab7;
+}
+.cardtitle {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.cardcontent {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.cardbtn {
+  text-decoration: none;
+  color: white;
+}
+
+.cardbtn {
+  all: unset;
+  float: right;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+.cardbtn:hover {
+  color: #02b875;
+  background: #fff;
+}
+.card:nth-child(2) .cardbtn:hover {
+  color: #4181ee;
+  background: #fff;
+}
+.card:last-child .cardbtn:hover {
+  color: #673ab7;
+  background: #fff;
+}
+@media screen and (max-width: 700px) {
+  div.content {
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+
+  .title {
     margin: 0;
     line-height: 1.15;
-    font-size: 50px;
+    font-size: 32px;
   }
-  
+
   .title,
   .description {
-    text-align: center;
+    text-align: left;
   }
-  
+
   .description {
     margin: 32px 0;
     line-height: 1.5;
     font-size: 24px;
   }
-  
-  .fingerdown{
-    animation-name: fingerdownanim;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    display: inline-block;
+
+  .code {
+    background: #0a0a0a;
+    color: #f1f1f1;
+    border-radius: 2px;
   }
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+}
+@media screen and (max-width: 480px) {
   div.content {
-    margin-left: 250px;
-    padding: 32px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .wrapper{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .card{
-     max-width: 300px;
-     min-height: 250px;
-     background: #02b875;
-     padding: 30px;
-     box-sizing: border-box;
-     color: #FFF;
-     margin:20px;
-     box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
-  }
-  .card:nth-child(2){
-    background: #4181ee;
-  }
-  .card:last-child{
-    background: #673ab7;
-  }
-  .cardtitle{
-     margin-top: 0;
-     font-size: 16px;
-     font-weight: 600;
-     letter-spacing: 1.2px;
-  }
-  .cardcontent{
-     font-size: 14px;
-     letter-spacing: 0.5px;
-     line-height: 1.5;
+    margin: 0 auto;
+    word-wrap: break-word;
   }
 
-  .cardbtn {
-    text-decoration: none;
-    color: white;
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 32px;
   }
 
-  
-  .cardbtn{
-     all: unset;
-     float: right;
-     border: 2px solid #FFF;
-     padding: 10px 15px;
-     border-radius: 25px;
-     font-size: 10px;
-     font-weight: 600;
-     transition: all 0.5s;
-     cursor: pointer;
-     letter-spacing: 1.2px;
+  .title,
+  .description {
+    text-align: left;
   }
-  .cardbtn:hover{
-    color:#02b875;
-    background: #FFF;
+
+  .description {
+    margin: 32px 0;
+    line-height: 1.5;
+    font-size: 24px;
   }
-  .card:nth-child(2) .cardbtn:hover{
-    color:#4181ee;
-    background: #FFF;
+
+  .code {
+    background: #0a0a0a;
+    color: #f1f1f1;
+    border-radius: 2px;
   }
-  .card:last-child .cardbtn:hover{
-    color:#673ab7;
-     background: #FFF;
+}
+
+@keyframes fingerdownanim {
+  from {
+    transform: translateY(0);
   }
-  @media screen and (max-width: 700px) {
-    div.content {
-     margin: 0 auto;
-     word-wrap: break-word;
-    }
-  
-    .title {
-      margin: 0;
-      line-height: 1.15;
-      font-size: 32px;
-    }
-    
-    .title,
-    .description {
-      text-align: left;
-    }
-    
-    .description {
-      margin: 32px 0;
-      line-height: 1.5;
-      font-size: 24px;
-    }
-    
-    .code {
-      background: #0a0a0a;
-      color: #f1f1f1;
-      border-radius: 2px;
-    }
-  
+  to {
+    transform: translateY(5px);
   }
-  @media screen and (max-width: 480px) {
-    div.content {
-      margin: 0 auto;
-      word-wrap: break-word;
-     }
-   
-     .title {
-       margin: 0;
-       line-height: 1.15;
-       font-size: 32px;
-     }
-     
-     .title,
-     .description {
-       text-align: left;
-     }
-     
-     .description {
-       margin: 32px 0;
-       line-height: 1.5;
-       font-size: 24px;
-     }
-     
-     .code {
-       background: #0a0a0a;
-       color: #f1f1f1;
-       border-radius: 2px;
-     }
-   
-   
-  }
-  
-  
-  @keyframes fingerdownanim {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(5px);
-    }
-  }
-  
-  
-  
+}
