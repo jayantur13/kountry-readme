@@ -30,7 +30,7 @@ export default function Footer() {
         <Link href="/" passHref={true}>
           <a>
             <Image
-              src="/kountrylogo.png"
+              src="/Kountry-readme/kountrylogo.png"
               alt="Kountry Logo"
               width={48}
               height={48}
@@ -57,7 +57,7 @@ export default function Footer() {
           {`${theme}` === "dark" ? (
             <input
               type="image"
-              src="/light.png"
+              src="/Kountry-readme/light.png"
               alt="light"
               width={24}
               height={24}
@@ -67,7 +67,7 @@ export default function Footer() {
           ) : (
             <input
               type="image"
-              src="/dark.png"
+              src="/Kountry-readme/dark.png"
               alt="dark"
               width={24}
               height={24}
