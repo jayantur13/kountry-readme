@@ -17,7 +17,7 @@ export default function Projects() {
         />
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/Kountry-readme/favicon.png" />
       </Head>
       <div className={styles.content}>
         <h1 className={styles.title}>Projects</h1>
