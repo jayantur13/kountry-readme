@@ -11,12 +11,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              src="/Kountry-readme/npm.png"
-              alt="Npm Logo"
-              width={48}
-              height={48}
-            />
+            <Image src="/npm.png" alt="Npm Logo" width={48} height={48} />
           </a>
         </p>
       </h2>
