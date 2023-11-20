@@ -3,7 +3,7 @@
  */
 module.exports = {
   reactStrictMode: true,
-  basePath: "/Kountry-readme",
+  basePath: "/kountry-readme",//Home or root (/)
   images: {
     unoptimized: true,
     remotePatterns: [

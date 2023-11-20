@@ -27,37 +27,37 @@ export default function Footer() {
         ></meta>
       </Head>
       <nav className="sidebar">
-        <Link href="/" passHref={true}>
+        <Link href="/" passHref={true} legacyBehavior>
           <a>
             <Image
-              src="/Kountry-readme/kountrylogo.png"
+              src="/kountry-readme/kountrylogo.png"
               alt="Kountry Logo"
               width={48}
               height={48}
             />
           </a>
         </Link>
-        <Link href="/" passHref={true}>
+        <Link href="/" passHref={true} legacyBehavior>
           <a className={currentRoute === "/" ? "active" : ""}>Documentation</a>
         </Link>
-        <Link href="/examples" passHref={true}>
+        <Link href="/examples" passHref={true} legacyBehavior>
           <a className={currentRoute === "/examples" ? "active" : ""}>
             Examples
           </a>
         </Link>
-        <Link href="/projects" passHref={true}>
+        <Link href="/projects" passHref={true} legacyBehavior>
           <a className={currentRoute === "/projects" ? "active" : ""}>
             Projects
           </a>
         </Link>
-        <Link href="https://github.com/jayantur13/Kountry">
+        <Link href="https://github.com/jayantur13/Kountry" legacyBehavior>
           <a target="_blank">Github Source</a>
         </Link>
         <div>
           {`${theme}` === "dark" ? (
             <input
               type="image"
-              src="/Kountry-readme/light.png"
+              src="/kountry-readme/light.png"
               alt="light"
               width={24}
               height={24}
@@ -67,7 +67,7 @@ export default function Footer() {
           ) : (
             <input
               type="image"
-              src="/Kountry-readme/dark.png"
+              src="/kountry-readme/dark.png"
               alt="dark"
               width={24}
               height={24}
