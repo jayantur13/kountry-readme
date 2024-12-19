@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Head from "next/head";
-import { useTheme } from "next-themes";
+import { useTheme } from "@solorev/react-themes";
 import { useState, useEffect } from "react";
 
 export default function Footer() {

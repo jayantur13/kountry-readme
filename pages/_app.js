@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from '@solorev/react-themes'
 import SideBar from '../components/sidebar'
 import Footer from '../components/footer'
 
